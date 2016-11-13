@@ -27,6 +27,7 @@ nav {
   /* display: inline-block; --removing this makes the whole thing stretch across the page*/
   list-style-type: none;
   color: #7A2D15;
+  font-size: 110%;
 }
 
 nav ul {
@@ -47,15 +48,16 @@ nav ul li {
 
 nav li a {
     /* display: inline-block;  --why does removing this line collapse the*/
-   display: inline-block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 1em 1.2em;
+  text-decoration: none;
 }
 
 nav li a:hover {
-  background: rgba(218,165,32, 0.8);
+  background: rgba(113, 10, 98, 1);
+  transition-duration: 2s;
 }
 
 #currentPage {
@@ -71,7 +73,8 @@ nav li a:hover {
 
 #currentPage:hover {
   background: rgba(218,165,32, 0.8);
-  box-shadow: 0px 0px 12px 20px rgba(50,205,50, 0.8); /*glowing lime color */
+  box-shadow: 0px 20px 20px 20px rgba(50,205,50, 0.8); /*glowing lime color */
+  transition-duration: 2s;
 }
 
 /*****
