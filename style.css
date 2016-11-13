@@ -1,4 +1,9 @@
-/*The John Grillo CodeFellow's 201 StyleSheet.*/
+/*The John Grillo CodeFellow's 201 StyleSheet.
+
+  other color ideas go to: http://bada55.io/
+  for oddball hex word colors.
+*/
+
 * {
   box-sizing: border-box;
 }
@@ -13,6 +18,66 @@ main {
   margin: 0 auto;
   background-color: #bbeeff;
 }
+
+/*****
+THIS IS THE NAV BAR
+
+*****/
+nav {
+  /* display: inline-block; --removing this makes the whole thing stretch across the page*/
+  list-style-type: none;
+  color: #7A2D15;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0 auto;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+nav ul:hover {
+  background-color: #333;
+}
+
+nav ul li {
+  float: left;
+}
+
+nav li a {
+    /* display: inline-block;  --why does removing this line collapse the*/
+   display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+nav li a:hover {
+  background: rgba(218,165,32, 0.8);
+}
+
+#currentPage {
+  display: inline-block;
+  background: rgba(218,165,32, 0.8);
+  color: #FFF;
+  font-family: "Century Gothic", Helvetica, Arial, sans-serif;
+  font-weight: bolder;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+
+}
+
+#currentPage:hover {
+  background: rgba(218,165,32, 0.8);
+  box-shadow: 0px 0px 12px 20px rgba(50,205,50, 0.8); /*glowing lime color */
+}
+
+/*****
+THIS IS THE FIRST COLUMN
+
+*****/
 
 section {
   float: left;
@@ -71,15 +136,7 @@ article p:hover {
 
 }
 
-#currentPage {
-  display: inline-block;
-  background: #1A1A1A;
-  color: #FFF;
-  font-family: "Century Gothic", Helvetica, Arial, sans-serif;
-  font-weight: bolder;
-  text-transform: uppercase;
 
-}
 
 aside {
   float: left;
