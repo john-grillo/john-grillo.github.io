@@ -19,10 +19,10 @@ main {
   background-color: #bbeeff;
 }
 
-/*****
+/*******************
 THIS IS THE NAV BAR
 
-*****/
+*******************/
 nav {
   /* display: inline-block; --removing this makes the whole thing stretch across the page*/
   list-style-type: none;
@@ -32,7 +32,7 @@ nav {
 
 nav ul {
   list-style-type: none;
-  margin: 0 auto;
+  margin: 0;
   padding: 0;
   overflow: hidden;
   background-color: #333;
@@ -42,26 +42,29 @@ nav ul:hover {
   background-color: #333;
 }
 
-nav ul li {
+/*nav ul li {
   float: left;
-}
+}*/
 
 nav li a {
-    /* display: inline-block;  --why does removing this line collapse the*/
+    /* display: inline-block;  --why does removing this line collapse the nav bar*/
   display: inline-block;
+  float: left;
   color: white;
   text-align: center;
   padding: 1em 1.2em;
   text-decoration: none;
 }
 
-nav li a:hover {
-  background: rgba(113, 10, 98, 1);
+nav li a:hover {  /* delete the 'a' in front and you get monster blood oozing from the top*/
+  background: rgba(113, 10, 98, 1); /* mauve color */
+  box-shadow: 0px 20px 20px 20px rgba(50,205,50, 0.8); /*glowing lime color */
   transition-duration: 2s;
 }
 
 #currentPage {
   display: inline-block;
+  float: left;
   background: rgba(218,165,32, 0.8);
   color: #FFF;
   font-family: "Century Gothic", Helvetica, Arial, sans-serif;
@@ -77,10 +80,10 @@ nav li a:hover {
   transition-duration: 2s;
 }
 
-/*****
+/*************************
 THIS IS THE FIRST COLUMN
 
-*****/
+**************************/
 
 section {
   float: left;
@@ -145,6 +148,7 @@ aside {
   float: left;
   background-color: #ddd;
   width: 33%;
+  text-align: center;
 }
 
 aside figure:hover {
